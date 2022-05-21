@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Card from './Card';
+import 'tachyons';
+import {robots} from './robots';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <Card robot={robots[0]} />
+      <Card robot={robots[1]} />
+      <Card robot={robots[2]}/>
   </React.StrictMode>
 );
 
