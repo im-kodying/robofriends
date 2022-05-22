@@ -17,6 +17,7 @@ class App extends React.Component {
         this.setState({searchfield: event.target.value})
     }
 
+    // on refresh
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users').then(response=> {
             return response.json();
